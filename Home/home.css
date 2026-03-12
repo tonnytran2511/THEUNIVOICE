@@ -1,0 +1,204 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* NAVBAR */
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  z-index: 1000;
+  background-color: #002f71cc;
+}
+
+nav .container .navbar-header {
+    margin: 0 0 0 20px;
+    display: flex;
+    align-items: center;
+    height: 60px;    /* ẩn phần dư bên ngoài khung */
+}
+
+nav .container .navbar-header a {
+    padding: 10px 0 0 0;
+    display: inline-block;
+}
+
+nav .container .navbar-header a img {
+    display: block;
+    width: 100px;
+    height: auto;
+}
+
+nav .container {
+  padding: 10px 150px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu ul li {
+  display: inline-block;
+}
+
+.MenuLink {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: large;
+  padding: 8px 14px;
+  border-radius: 5px;
+  display: inline-block;
+  transition: all 0.3s ease;
+}
+
+nav .container .menu ul li a:hover {
+  background-color: #033f8d;
+  transform: scale(1.1);
+}
+
+/* BACKGROUND */
+.background {
+  background-image: url("/Assets/images/Backgroundhomepage.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 1152px;
+  width: 100%;
+}
+
+/* WINNER SECTION */
+.winner {
+  margin: 50px 206px;
+  display: flex;
+  justify-content: center; /* giữa ngang */
+  align-items: center;
+}
+
+.winner .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 400px;
+}
+
+.winner .container .content {
+  flex: 1;
+}
+
+.winner .container .image img {
+  display: block;
+  width: 500px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.winner .container .content .THEFIRSTWINNER {
+  color: #043372;
+}
+
+.winner .container .content .univoice {
+  background: linear-gradient(to right, #043372, #d6cce4);
+  background-clip: text; /* standard property for compatibility */
+  -webkit-background-clip: text;
+  color: transparent; /* standard fallback for non‑WebKit */
+  -webkit-text-fill-color: transparent;
+}
+
+.winner .container .content a button {
+  background: linear-gradient(to right, #043372, #d6cce4);
+  min-width: 150px;
+  height: 42px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-top: 40px;
+  color: white;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.winner .container .content a button:hover {
+  background: linear-gradient(45deg, #043372, #d6cce4);
+  transform: scale(1.05);
+}
+
+/* abouttheunivoice SECTION */
+.abouttheunivoice {
+    padding: 30px 0;
+    background-image: url("/Assets/images/abouttheunivbackgr.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.abouttheunivoice .container {
+    margin: 0 206px 20px;
+    padding: 0 15px;
+}
+
+.abouttheunivoice .container .content {
+    text-align: justify;
+    margin: 0 auto 20px;
+    font-size: 18px;
+    max-width: 800px;
+}
+
+.abouttheunivoice .container .content h2 {
+    text-align: center;
+    background: linear-gradient(to right, #384f8a, #d6cce4);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+}
+
+.abouttheunivoice .container .content .vsummaryvcontent {
+    margin: 16px 0 40px;
+    color: white;
+}
+
+.abouttheunivoice .container .image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.abouttheunivoice .container .image img {
+    width: 960px;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* SPONSOR SECTION */
+#sposors {
+  display: flex;
+}
+
+.SponsorImg img {
+  width: 10%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  float: left;
+}
+
+/* Responsive (mobile) */
+@media (max-width: 768px) {
+  .winner .container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .winner .container .image img {
+    width: 100%;
+  }
+}

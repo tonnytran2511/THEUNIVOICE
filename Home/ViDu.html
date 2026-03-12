@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        .box {
+            background-color: #ffcc00;
+            border: 2px solid #000;
+            margin: 10px;
+            padding: 10px;
+            /* Mình thử đặt kích thước cho cả 3 */
+            width: 150px; 
+            height: 50px;
+        }
+
+        .d-block {
+            display: block;
+        }
+
+        .d-inline {
+            display: block;
+        }
+
+        .d-inline-block {
+            display: inline-block;
+        }
+
+        /* Thêm màu khác nhau để dễ nhìn */
+        .block-color { background-color: #ff6b6b; }
+        .inline-color { background-color: #4ecdc4; }
+        .inline-block-color { background-color: #ffe66d; }
+    </style>
+</head>
+<body>
+
+    <h2>1. Display: BLOCK</h2>
+    <p>Mỗi thẻ nằm 1 hàng riêng, nhận chiều rộng 150px.</p>
+    <div class="box d-block block-color">Khối 1</div>
+    <div class="box d-block block-color">Khối 2</div>
+
+    <hr>
+
+    <h2>2. Display: INLINE</h2>
+    <p>Nằm chung hàng, nhưng <b>BỊ LỜ ĐI</b> chiều rộng (150px) và chiều cao (50px).</p>
+    <span class="box d-inline inline-color">Inline 1</span>
+    <span class="box d-inline inline-color">Inline 2</span>
+
+    <hr>
+
+    <h2>3. Display: INLINE-BLOCK</h2>
+    <p>Nằm chung hàng <b>VÀ VẪN NHẬN</b> chiều rộng 150px, chiều cao 50px.</p>
+    <div class="box d-inline-block inline-block-color">Cặp bài trùng 1</div>
+    <div class="box d-inline-block inline-block-color">Cặp bài trùng 2</div>
+
+</body>
+</html>
