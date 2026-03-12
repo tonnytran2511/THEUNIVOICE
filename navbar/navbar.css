@@ -1,0 +1,57 @@
+/* NAVBAR */
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  z-index: 1000;
+  background-color: #002f71cc;
+  padding: 15px 0;
+}
+
+nav .container .navbar-header {
+    margin: 0 0 0 20px;
+    display: flex;
+    align-items: center;
+    height: 60px;    /* ẩn phần dư bên ngoài khung */
+}
+
+nav .container .navbar-header a {
+    padding: 10px 0 0 0;
+    display: inline-block;
+}
+
+nav .container .navbar-header a img {
+    display: block;
+    width: 100px;
+    height: auto;
+}
+
+nav .container {
+  margin: 0 5.5vw;
+  padding: 0 15px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu ul li {
+  display: inline-block;
+}
+
+.MenuLink {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: large;
+  padding: 8px 14px;
+  border-radius: 5px;
+  display: inline-block;
+  transition: all 0.3s ease;
+}
+
+nav .container .menu ul li a:hover {
+  background-color: #033f8d;
+  transform: scale(1.1);
+}

@@ -13,6 +13,7 @@
       rel="stylesheet"
       href="/Assets/fontawesome-free-7.2.0/css/all.min.css"
     />
+    <link rel="stylesheet" href="/navbar/navbar.css">
     <style>
       h2,
       h1 {
@@ -24,27 +25,7 @@
     </style>
   </head>
   <body>
-    <nav>
-      <div class="container">
-        <div class="navbar-header">
-          <a href="home.html"><img src="/Assets/images/Logo.png" /></a>
-        </div>
-        <div class="menu text">
-          <ul>
-            <li><a href="home.html" class="MenuLink">HOME</a></li>
-            <li><a href="/Aboutus/aboutus.html" class="MenuLink">ABOUT US</a></li>
-            <li>
-              <a href="/Merchandise/merchandise.html" class="MenuLink">MERCHANDISE</a>
-            </li>
-            <li>
-              <a href="/News&gallery/news&gallery.html" class="MenuLink">NEWS & GALLERY</a>
-            </li>
-            <li><a href="/Partners/partners.html" class="MenuLink">PARTNERS</a></li>
-            <li><a href="/Contact/contact.html" class="MenuLink">CONTACT</a></li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+    <div id="navbar-placeholder"></div>
     <div class="background"></div>
     <div class="winner">
       <div class="container">
@@ -116,5 +97,13 @@
     </div>
     <h1>Toả sáng ngay!</h1>
     <button>Đăng ký</button>
+    <script>
+    fetch('/navbar/navbar.html')
+        .then(res => res.text())
+        .then(data => {
+            document.getElementById('navbar-placeholder').innerHTML = data;
+        });
+    </script>
   </body>
+  
 </html>
