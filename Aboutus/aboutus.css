@@ -1,7 +1,68 @@
-.HinhNen {
-    background-image: url(/Assets/images/Backgroundhomepage.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 1152px;
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+.hinh-nen {
     width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-image: url('../Assets/images/Backgroundhomepage.png');
+    background-size: cover;
+    background-position: center;
+}
+
+
+.chu {
+    text-align: center;
+    align-items: center;
+    margin: auto;
+     margin-top: 200px;
+    width: 100vw; 
+    z-index: 2;
+}
+
+.chu-nho h1 {
+     background: linear-gradient(to right, #043372, #d6cce4);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 3rem;
+    margin: 0 0 10px 0;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.chu-nho2 h2 {
+      color: #043372;
+     font-size: 2rem;
+    margin: 0 0 20px 0;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.nhieuchu p {
+     color: black;
+     font-size: 1.2rem;
+    line-height: 1.6;
+    margin: 0 auto;
+    max-width: 700px;
+}
+
+.nut a button {
+     background: linear-gradient(to right, #043372, #d6cce4);
+  min-width: 150px;
+  height: 42px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-top: 40px;
+  color: white;
+  font-size: 16px;
+  text-decoration: none;
 }
