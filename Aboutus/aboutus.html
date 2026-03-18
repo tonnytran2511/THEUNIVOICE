@@ -1,4 +1,24 @@
-<h1>The UNIVoice</h1>
+<!DOCTYPE html>
+<html>
+  <head>
+<title>THE UNIVOICE - ABOUT US</title>
+    <meta charset="UTF-8" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Goldman:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/png" href="/Assets/images/Logoshine.png" />
+    <link rel="stylesheet" href="aboutus.css" />
+    <link
+      rel="stylesheet"
+      href="/Assets/fontawesome-free-7.2.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="/navbar/navbar.css">
+  </head>
+  <body>
+    <div id="navbar-placeholder"></div>
+    <div class="HinhNen"></div>
+    <h1>The UNIVoice</h1>
     <h2>Tiếng nói Sinh viên</h2>
     <p>
       Với mong muốn tạo dựng một sân chơi chuyên nghiệp và ý nghĩa dành riêng
@@ -45,3 +65,12 @@
         Xây dựng môi trường học đường năng động, hiện đại, nhân văn, sáng tạo.
       </li>
     </ul>
+  </body>
+  <script>
+    fetch('/navbar/navbar.html')
+        .then(res => res.text())
+        .then(data => {
+            document.getElementById('navbar-placeholder').innerHTML = data;
+        });
+    </script>
+</html>

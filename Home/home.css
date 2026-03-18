@@ -3,14 +3,10 @@ body {
   margin: 0;
   padding: 0;
 }
-/* BACKGROUND */
-.background {
-  background-image: url("/Assets/images/Backgroundhomepage.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  height: 1152px;
+/* HOME BACKGROUND */
+.background img {
   width: 100%;
+  height: auto;
 }
 
 /* WINNER SECTION */
@@ -47,7 +43,7 @@ body {
   background: linear-gradient(to right, #043372, #d6cce4);
   background-clip: text; /* standard property for compatibility */
   -webkit-background-clip: text;
-  color: transparent; /* standard fallback for non‑WebKit */
+  
   -webkit-text-fill-color: transparent;
 }
 
@@ -75,74 +71,97 @@ body {
 }
 
 /* abouttheunivoice SECTION */
-.abouttheunivoice {
-    padding: 30px 0;
+.about-the-univoice {
+    padding: 50px 0;
     background-image: url("/Assets/images/abouttheunivbackgr.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
 
-.abouttheunivoice .container {
-    margin: 0 206px 20px;
+.about-the-univoice_container {
+    margin: 0 191px;
     padding: 0 15px;
+    display: flex;
+    flex-direction: column;
 }
 
-.abouttheunivoice .container .content {
+.about-the-univoice_container_description {
     text-align: justify;
-    margin: 0 auto 20px;
+    margin: 0 auto 30px;
     font-size: 18px;
     max-width: 800px;
 }
 
-.abouttheunivoice .container .content h2 {
+.about-the-univoice_container_description h2 {
     text-align: center;
     background: linear-gradient(to right, #384f8a, #d6cce4);
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
     -webkit-text-fill-color: transparent;
+    font-size: 40px;
+    margin: 0;
 }
 
-.abouttheunivoice .container .content .vsummaryvcontent {
-    margin: 16px 0 40px;
+.summary-content {
+    margin-top: 16px;
     color: white;
 }
 
-.abouttheunivoice .container .image {
+.about-the-univoice_container_image {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.abouttheunivoice .container .image img {
+.about-the-univoice_container_image img {
     width: 960px;
     height: auto;
     border-radius: 10px;
 }
 
 /* SPONSOR SECTION */
-#sposors {
-  display: flex;
+#sponsors-box {
+  padding: 50px 0;
 }
 
-.SponsorImg img {
-  width: 10%;
-  height: auto;
+.sponsors-box-content {
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 0 15px;
+  max-width: 1200px;
+  height: 85px;
   display: flex;
-  align-items: center;
-  text-align: center;
-  float: left;
+  justify-content: space-around;
+
 }
 
-/* Responsive (mobile) */
-@media (max-width: 768px) {
-  .winner .container {
-    flex-direction: column;
-    text-align: center;
-  }
+.sponsors-box-content-link {
+  flex-shrink: 0;
+}
 
-  .winner .container .image img {
-    width: 100%;
-  }
+.sponsors-img {
+  display: flex;
+  box-sizing: border-box;
+  justify-content: center;
+  width: 120px;   /* Bạn muốn to hay nhỏ, chỉ cần sửa ở đây */
+  max-height: 85px;
+  aspect-ratio: 1/1; /* Cắt bỏ nếu ảnh bị tràn */
+  padding: 16px;
+  margin: 0 10px;
+}
+
+.sponsors-box-content-link + .sponsors-box-content-link {
+  margin-right: 20px;
+}
+
+.sponsors-img img {
+  width: auto;
+  height: 100%;
+}
+
+
+.pov img {
+  object-fit: contain;
 }
