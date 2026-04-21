@@ -3,9 +3,9 @@
   <head>
     <title>THE UNIVOICE</title>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/png" href="/Assets/images/Logoshine.png" />
+    <link rel="icon" type="image/png" href="./Assets/images/Logoshine.png" />
     <link rel="stylesheet" href="./home.css" />
-    <link rel="stylesheet" href="/Assets/global.css" />
+    <link rel="stylesheet" href="./Assets/global.css" />
   </head>
   <body>
     <!-- navbar -->
@@ -26,7 +26,7 @@
         </div>
 
         <div class="image">
-          <img src="/Assets/images/tmt.jpg" title="TranMinhTuong" />
+          <img src="./Assets/images/tmt.jpg" title="TranMinhTuong" />
         </div>
       </div>
     </div>
@@ -73,7 +73,7 @@
           </div>
         </div>
         <figure class="about-the-univoice_container_image">
-          <img style="" src="/Assets/images/abouttheuniv.png" />
+          <img style="" src="./Assets/images/abouttheuniv.png" />
         </figure>
       </div>
     </div>
@@ -93,20 +93,20 @@
           href="https://www.facebook.com/bkquocte"
           class="sponsors-box-content-link"
           ><div class="bk sponsors-img">
-            <img src="/Assets/images/bk.png" alt="Bach khoa Logo" /></div
+            <img src="./Assets/images/bk.png" alt="Bach khoa Logo" /></div
         ></a>
         <a
           href="https://www.facebook.com/hoisinhvien.com.vn"
           class="sponsors-box-content-link"
           ><div class="hoi sponsors-img">
-            <img src="/Assets/images/hoi.png" alt="Hoi Sinh vien Logo" /></div
+            <img src="./Assets/images/hoi.png" alt="Hoi Sinh vien Logo" /></div
         ></a>
         <a
           href="https://www.facebook.com/PotentialOISPVoices"
           class="sponsors-box-content-link"
         >
           <div class="pov sponsors-img">
-            <img src="/Assets/images/pov.png" alt="CLB POV Logo" />
+            <img src="./Assets/images/pov.png" alt="CLB POV Logo" />
           </div>
         </a>
         <a
@@ -114,7 +114,7 @@
           class="sponsors-box-content-link"
         >
           <div class="tedu sponsors-img">
-            <img src="/Assets/images/tedu.png" alt="TEDU Logo" />
+            <img src="./Assets/images/tedu.png" alt="TEDU Logo" />
           </div>
         </a>
         <i
@@ -232,7 +232,7 @@
     </div>
     <!-- National directors -->
     <script>
-      fetch("/navbar/navbar.html")
+      fetch("./navbar/navbar.html")
         .then((res) => res.text())
         .then((data) => {
           document.getElementById("navbar-placeholder").innerHTML = data;
