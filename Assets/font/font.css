@@ -1,0 +1,44 @@
+@font-face {
+  font-family: "SVNGilroy";
+  src: url("SVN-Gilroy-Regular.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+    font-family: "SVNGilroy Bold";
+    src: url("SVN-Gilroy-Bold.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+  font-family: "Goldman";
+  src: url("Goldman-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Goldman Bold";
+  src: url("Goldman-Bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+h2,
+h1 {
+  font-family: "Goldman Bold", "Goldman", "SVNGilroy", sans-serif;
+}
+
+b {
+    font-family: "SVNGilroy Bold", "SVNGilroy", sans-serif;
+}
+
+.menu ul {
+  font-family: "Goldman", "SVNGilroy", sans-serif;
+}
+
+.text {
+  font-family: "SVNGilroy", sans-serif;
+}
