@@ -6,10 +6,10 @@
 }
 
 @font-face {
-    font-family: "SVNGilroy Bold";
-    src: url("SVN-Gilroy-Bold.otf") format("opentype");
-    font-weight: normal;
-    font-style: normal;
+  font-family: "SVNGilroy Bold";
+  src: url("SVN-Gilroy-Bold.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
@@ -29,10 +29,11 @@
 h2,
 h1 {
   font-family: "Goldman Bold", "Goldman", "SVNGilroy", sans-serif;
+  font-size: 40px;
 }
 
 b {
-    font-family: "SVNGilroy Bold", "SVNGilroy", sans-serif;
+  font-family: "SVNGilroy Bold", "SVNGilroy", sans-serif;
 }
 
 .menu ul {
@@ -41,4 +42,15 @@ b {
 
 .text {
   font-family: "SVNGilroy", sans-serif;
+  font-size: 16px;
+}
+
+@media (max-width: 1500px) {
+  .text {
+    font-size: 15px;
+  }
+  h1,
+  h2 {
+    font-size: 32px;
+  }
 }

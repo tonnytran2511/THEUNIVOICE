@@ -11,6 +11,11 @@ body {
   height: auto;
 }
 
+#main {
+  display: block;
+  box-sizing: border-box;
+}
+
 /* WINNER SECTION */
 .winner {
   margin: 50px 206px;
@@ -19,29 +24,29 @@ body {
   align-items: center;
 }
 
-.winner .container {
+.winner_container {
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 400px;
 }
 
-.winner .container .content {
+.winner_container .content {
   flex: 1;
 }
 
-.winner .container .image img {
+.winner_container .image img {
   display: block;
   width: 500px;
   height: auto;
   border-radius: 10px;
 }
 
-.winner .container .content .THEFIRSTWINNER {
+.THEFIRSTWINNER {
   color: #043372;
 }
 
-.winner .container .content .univoice {
+.univoice {
   background: linear-gradient(to right, #043372, #d6cce4);
   background-clip: text; /* standard property for compatibility */
   -webkit-background-clip: text;
@@ -49,7 +54,7 @@ body {
   -webkit-text-fill-color: transparent;
 }
 
-.winner .container .content a button {
+.winner_container_content a button {
   background: linear-gradient(to right, #043372, #d6cce4);
   min-width: 150px;
   height: 42px;
@@ -67,13 +72,13 @@ body {
   text-decoration: none;
 }
 
-.winner .container .content a button:hover {
+.winner_container_content a button:hover {
   background: linear-gradient(45deg, #043372, #d6cce4);
   transform: scale(1.05);
 }
 
-/* abouttheunivoice SECTION */
-.about-the-univoice_container {
+/* abouttheunivoice & The UNIVoice 2025 SECTION */
+.alignwide {
   margin: 0 191px;
   padding: 0 15px;
   display: flex;
@@ -81,45 +86,43 @@ body {
   justify-content: center;
 }
 
-.about-the-univoice_container_description {
+.aligncenter {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: 0 auto 30px;
-  font-size: 18px;
   max-width: 800px;
 }
 
-.about-the-univoice_container_description h2 {
+.style-gradient {
   width: fit-content;
   background: linear-gradient(to right, #384f8a, #d6cce4);
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
   -webkit-text-fill-color: transparent;
-  font-size: 40px;
   margin: 0;
 }
 
-.summary-content {
+.description {
   margin-top: 16px;
   color: white;
   height: fit-content;
-  width: fit-content;
+  width: 877.5px;
 }
 
-.summary-content p {
+.description p {
   text-align: justify;
   margin: 0;
   margin-bottom: 8px;
 }
 
-.about-the-univoice_container_image {
+.container_image {
   display: block;
   margin: 0 0 16px 0;
 }
 
-.about-the-univoice_container_image img {
+.container_image img {
   display: block;
   margin: 0 auto;
   width: 1024px;
@@ -129,18 +132,24 @@ body {
 }
 
 /* SPONSOR SECTION */
-#sponsors-box {
+.white-box-padding {
   padding: 50px 0;
 }
 
-.sponsors-box-content {
+.height-for-sponsor {
+  height: 85px;
+}
+
+.image-space {
+  display: flex;
+  justify-content: space-around;
+}
+
+.alignwide-for-white-box {
   box-sizing: border-box;
   margin: 0 auto;
   padding: 0 15px;
   max-width: 1200px;
-  height: 85px;
-  display: flex;
-  justify-content: space-around;
 }
 
 .sponsors-box-content-link {
@@ -169,4 +178,37 @@ body {
 
 .pov img {
   object-fit: contain;
+}
+
+/* The UNIVoice 2025 */
+.container_video {
+  display: flex;
+  justify-content: center;
+}
+
+video {
+  width: 930px;
+  height: auto;
+}
+
+/* National Directors */
+.national-director-container_content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.director-images {
+  display: flex;
+  align-items: center;
+}
+
+.header {
+  height: fit-content;
+}
+
+@media (max-width: 1500px) {
+  .description {
+    width: fit-content;
+  }
 }
